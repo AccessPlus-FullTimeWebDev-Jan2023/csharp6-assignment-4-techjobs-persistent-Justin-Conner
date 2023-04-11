@@ -5,6 +5,7 @@ using Microsoft.Extensions.Logging;
 using TechJobs6Persistent.Models;
 using TechJobs6Persistent.Controllers;
 
+
 namespace TechJobs6Persistent.Data
 {
 	public class JobDbContext : DbContext
