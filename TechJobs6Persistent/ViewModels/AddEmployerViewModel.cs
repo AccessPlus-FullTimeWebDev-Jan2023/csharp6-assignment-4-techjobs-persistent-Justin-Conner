@@ -1,19 +1,13 @@
 ﻿using System.ComponentModel.DataAnnotations;
+
 namespace TechJobs6Persistent.ViewModels
 {
-
-
     public class AddEmployerViewModel
     {
-        private string? location;
-
-        [Required(ErrorMessage = "Name is required")]
+        [Required(ErrorMessage = "Please enter an employer name")]
         public string? Name { get; set; }
 
-        [Required(ErrorMessage = "Location is required")]
-        public string? Location { get => location; set => location = value; }
+        [Required(ErrorMessage = "Please enter the employer's location")]
+        public string? Location { get; set; }
     }
-
 }
-
-//see ReadMe.md for explenation of code section AddEmployerViewModel.cs
